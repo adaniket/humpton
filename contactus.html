@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>humpton</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lg-autoplay.min.css"
+        integrity="sha512-LlHSkMTvyRwh1YjzXwk6bxjdt3huGhCyK1vlCC6f7Db/g+2sYXz2YNasyZHnMUgykqPksmD/44DIINhqpWBjig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaquery.css">
+
+
+</head>
+
+<body onload="preLoader()">
+    <!-- preloader -->
+    <div class="preloader_box text-white fs_36" id="preloaderBox">
+        <h1 id="preloader"></h1>
+    </div>
+    <!-- preloader end -->
+
+    <!-- pointer -->
+    <div class="pointer d-lg-block d-none"></div>
+    <!-- pointer -->
+
+    <!-- menu -->
+    <div class="container-fluid header_menu bg-dark position-fixed">
+        <div class="row w-100 h-100">
+            <div class="col  d-flex flex-column justify-content-center align-items-center">
+                <ul class="list-unstyled menu_link">
+                    <li>
+                        <a class="" href="#">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="about.html">
+                           About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="contactus.html">
+                           Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <!-- header -->
+    <header class="header container-fluid">
+        <div class="container header_container " id="header">
+            <div class="row header_row py-2">
+                <div class="col d-flex justify-content-between">
+                    <a href="./index.html">
+                        <div class="logo position-relative">
+                            <img src="./assets/img/logo-white.png" alt="" height="50"
+                                class="position-absolute header_logo">
+                        </div>
+                    </a>
+                    <div class="menu">
+                        <button class="bg-transparent text-white border-0 d-flex" id="hamburger">
+                            <span class="d-none d-sm-block">Menu</span>
+                            <div class="menu_icon ms-4 mb-2">
+                                <div class="line mt-2 mb-1"></div>
+                                <div class="line mt-1"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header End -->
+
+    <div class="locomotive-scroll" id="locomotive">
+        <!-- Hero Section -->
+        <section class="container-fluid hero_section contact_section common_padding overflow-hidden" id="firstSection">
+            <div class="container">
+                <div class="row scale_box">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <i class="bi bi-arrow-down-right   fs_20"></i>
+                            </div>
+                            <h4 class="mt-4 ">Contact Us</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>
+                                    <span class="d-block">Hello</span>
+                                    <span class="d-block">Stranger </span>
+                                </h1>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end align-items-end pb-5">
+                                <div class="scroll_down position-relative d-none d-lg-block">
+                                    <a href="#secondSection" id="scrollDown" class="text-decoration-none text-white">
+                                        <span>Scroll Down </span>
+                                        <i class="bi bi-arrow-down-short fw-bold text-whites"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Map  -->
+        <section class="container-fluid py-5 px-0 mt_60" id="secondSection">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59577.46753830936!2d78.9643951582031!3d21.0490162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bf8f265d3891%3A0xf668f1ef84accdaa!2sEcsion%20Research%20Labs%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1673503274319!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <!-- Map end  -->
+
+        <!-- Lets Talk Section -->
+        <section class="common_section common_padding lets_talk_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <i class="bi bi-chevron-double-right text-dark"></i>
+                        <span class="text-dark mb-0 ms-2">Let's Talk</span>
+                        <h2 class="text-dark mt-5">
+                            Get <br>
+                            In Touch
+                        </h2>
+                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6  mt-5">
+                                <div class="position-relative">
+                                    <input type="text" placeholder="What's Your Name">
+                                    <label for="" class="input_lebel"></label>
+                                </div>
+                            </div>
+                            <div class="col-6  mt-5">
+                                <div class="position-relative">
+                                    <input type="email" placeholder="Your Email">
+                                    <label for="" class="input_lebel"></label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt_100">
+                                <div class="position-relative">
+                                    <input type="text" placeholder="Tell Us About Your Project">
+                                    <label for="" class="input_lebel"></label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="text-dark list-unstyled d-flex mt-5 gap-3">
+                                    <li class="number_input text-white ">1</li>
+                                    <li class="pt-2">+</li>
+                                    <li class="number_input text-white">3</li>
+                                    <li class="pt-2">=</li>
+                                    <li>
+                                        <input type="text" class="number_input">
+                                    </li>
+                                    <li>
+                                        <span>*Captcha Validation</span>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-outline-dark mt-3 px-3 fw-bold py-2">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="row mt_60">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <i class="bi bi-telegram text-dark fw-bold fs_18"></i>
+                        <div>
+                            <a href="#" class="text-decoration-none text-dark email_anchore">
+                                <h5 class="email mt-3 position-relative d-inline-block">
+                                    office@framework.com
+                                </h5>
+                            </a>
+                            <p class="text-dark">Email</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <i class="bi bi-geo-alt-fill text-dark fs_18"></i>
+                        <div>
+                            <a href="#" class="text-decoration-none text-dark">
+                                <h5 class=" mt-3 position-relative d-inline-block">
+                                    35 M Str, New York, USA
+                                </h5>
+                            </a>
+                            <p class="text-dark">Address</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="col-4">
+                            <i class="bi bi-telephone-fill text-dark fs_18"></i>
+                        </div>
+                        <div>
+                            <a href="#" class="text-decoration-none text-dark">
+                                <h5 class=" mt-3 position-relative d-inline-block">
+                                    0040 (7763) 574-8901
+                                </h5>
+                            </a>
+                            <p class="text-dark">Phone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Lets Talk Section End -->
+        <!-- Footer -->
+        <footer class="common_section common_padding contact_footer  pb-4 overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <i class="bi bi-arrow-down-right  text-dark fs_20"></i>
+                        <h4 class="mt-4">Portfolio</h4>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="marquee_text  text-start mt-4">More Works - More Works - More Works -</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-sm-between flex-column flex-sm-row ">
+                        <div class="scroll_down position-relative d-none d-lg-inline-block order-sm-1 order-2">
+                            <a href="#firstSection" id="backToTop" class="text-decoration-none text-dark">
+                                <i class="bi bi-arrow-up-short fw-bold text-darks"></i>
+                                <span>Back Top</span>
+                            </a>
+                        </div>
+                        <p class="order-sm-2 order-3 text-center text-sm-start">
+                            2022 © . All rights reserved.
+                        </p>
+                        <div class="order-sm-3 order-1 social_media d-flex d-block flex-column  align-items-center">
+                            <div class="d-flex gap-2 follow_us">
+                                <p class="mb-0">Follow Us</p>
+                                <i class="bi bi-share-fill text-dark pb-1"></i>
+                            </div>
+                            <div class="d-flex gap-3 scocial_links">
+                                <a href="#" class="text-dark">
+                                    In
+                                </a>
+                                <a href="#" class="text-dark">
+                                    Fb
+                                </a>
+                                <a href="#" class="text-dark">
+                                    Be
+                                </a>
+                                <a href="#" class="text-dark">
+                                    Tw
+                                </a>
+                                <a href="#" class="text-dark">
+                                    Db
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+    <script src="./assets/vendor/jquery.waypoints.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

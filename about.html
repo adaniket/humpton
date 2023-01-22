@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>humpton</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lg-autoplay.min.css"
+        integrity="sha512-LlHSkMTvyRwh1YjzXwk6bxjdt3huGhCyK1vlCC6f7Db/g+2sYXz2YNasyZHnMUgykqPksmD/44DIINhqpWBjig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaquery.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+
+</head>
+
+<body onload="preLoader()">
+
+    <!-- preloader -->
+    <div class="preloader_box text-white fs_36" id="preloaderBox">
+        <h1 id="preloader"></h1>
+    </div>
+    <!-- preloader end -->
+
+    <!-- pointer -->
+    <div class="pointer d-lg-block d-none"></div>
+    <!-- pointer -->
+
+    <!-- menu -->
+    <div class="container-fluid header_menu bg-dark position-fixed">
+        <div class="row w-100 h-100">
+            <div class="col  d-flex flex-column justify-content-center align-items-center">
+                <ul class="list-unstyled menu_link">
+                    <li>
+                        <a class="" href="#">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="about.html">
+                           About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="contactus.html">
+                           Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <!-- header -->
+    <header class="header container-fluid">
+        <div class="container header_container " id="header">
+            <div class="row header_row py-2">
+                <div class="col d-flex justify-content-between">
+                    <a href="./index.html">
+                        <div class="logo position-relative">
+                            <img src="./assets/img/logo-white.png" alt="" height="50"
+                                class="position-absolute header_logo">
+                        </div>
+                    </a>
+                    <div class="menu">
+                        <button class="bg-transparent text-white border-0 d-flex" id="hamburger">
+                            <span class="d-none d-sm-block">Menu</span>
+                            <div class="menu_icon ms-4 mb-2">
+                                <div class="line mt-2 mb-1"></div>
+                                <div class="line mt-1"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header End -->
+
+    <div class="locomotive-scroll" data-scroll-container>
+        <!-- Hero Section -->
+        <section class="container-fluid hero_section about_section common_padding overflow-hidden" id="firstSection">
+            <div class="container">
+                <div class="row scale_box">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <i class="bi bi-arrow-down-right  text-white fs_20"></i>
+                            </div>
+                            <h4 class="mt-4">Digital <br> Creative Agency</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>
+                                    <span class="d-block">Inspire </span>
+                                    <span class="d-block">Through </span>
+                                    <span class="d-block">Design </span>
+                                </h1>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end align-items-end pb-5">
+                                <div class="scroll_down position-relative d-none d-lg-block">
+                                    <a href="#secondSection" id="scrollDown" class="text-decoration-none text-white">
+                                        <span>Scroll Down </span>
+                                        <i class="bi bi-arrow-down-short fw-bold text-whites"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 pt_100 ms-auto fs_36">
+                                <p>
+                                    Humpton develops, designs and delivers websites and creative campaigns that drive
+                                    results,
+                                    build awareness and win awards.
+                                </p>
+                                <p class="mt-5">
+                                    Our work never brags, but it sure loves to speak for itself.
+                                </p>
+                                <div>
+                                    <a href="#" class="text-decoration-none text-white read_more position-relative">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Our Studio Section -->
+        <section class="common_padding common_section our_studio_section overflow-hidden" id="secondSection">
+            <div class="container">
+                <div class="row animate_row">
+                    <div class="col-12 text-center">
+                        <h1 class="text-dark text-center color_to_animate" data-before="Our">
+                            Our
+                        </h1>
+                        <br>
+                        <h1 class="text-dark text-center color_to_animate" data-before="Stories">Stories</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <i class="bi bi-chevron-double-right text-dark"></i>
+                        <span class="text-dark mb-0 ms-2">Objective</span>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-12 mt-5 mt-md-0">
+                        <p class="text-dark fs_18 common_line_height">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum.
+                        </p>
+                        <p class="mt-5 text-dark fs_18 common_line_height">
+                            You need to be sure there isn't anything embarrassing hidden in the middle of text. All the
+                            Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making
+                            this the first true generator on the Internet. It uses a dictionary with Latin words.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="swiper mySwiper flex-nowrap mt_60 w-100 overflow-hidden">
+                    <div class="swiper-wrapper d-flex align-items-end">
+                        <div class="swiper-slide me-0 d-flex align-items-end">
+                            <div class="studio_img_one">
+                                <img src="./assets/img/studio01.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide  d-flex align-items-end">
+                            <div class="studio_img_two">
+                                <img src="./assets/img/studio02.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide me-0  d-flex align-items-end">
+                            <div class="studio_img_theee">
+                                <img src="./assets/img/studio03.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide  d-flex align-items-end">
+                            <div class="studio_img_one">
+                                <img src="./assets/img/studio04.jpg" alt="" class="img-fluid">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper mySwiper flex-nowrap mt-4 w-100 overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide me-0">
+                            <div class="studio_img_one">
+                                <img src="./assets/img/studio01.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="studio_img_two">
+                                <img src="./assets/img/studio02.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide me-0 ">
+                            <div class="studio_img_theee">
+                                <img src="./assets/img/studio03.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="studio_img_one">
+                                <img src="./assets/img/studio04.jpg" alt="" class="img-fluid">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- our team -->
+            <div class="container animate_row_two">
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <h1 class="text-dark text-center color_to_animate  text_two" data-before="Our">
+                            Our
+                        </h1>
+                        <br>
+                        <h1 class="text-dark text-center color_to_animate  text_two" data-before="Team">Team</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <i class="bi bi-chevron-double-right text-dark"></i>
+                        <span class="text-dark mb-0 ms-2">Objective</span>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-12 mt-5 mt-md-0">
+                        <p class="text-dark fs_18 common_line_height">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-end mt-4">
+                    <div class="col-lg-8 col-12">
+                        <ul class="list-unstyled">
+                            <li class="border-1 border-bottom">
+                                <div
+                                    class="d-sm-flex  justify-content-between align-items-center">
+                                    <p class="team_fs text-center text-sm-start text-dark mb-0">
+                                        Patrick Fusariu
+                                    </p>
+                                    <span class="fs_18 text-dark text-center text-sm-start d-block d-sm-inline-block">
+                                        Web Designer
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="border-1 border-bottom mt-4">
+                                <div
+                                    class="d-sm-flex justify-content-between align-items-center">
+                                    <p class="team_fs text-dark mb-0 text-center text-sm-start">
+                                        Marius Atanasescu
+                                    </p>
+                                    <span class="fs_18 text-dark text-center text-sm-start d-block d-sm-inline-block">
+                                        Web Designer
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="border-1 border-bottom mt-4">
+                                <div
+                                    class="d-sm-flex  justify-content-between align-items-center">
+                                    <p class="team_fs text-dark mb-0  text-center text-sm-start" >
+                                        Alexandru Vior
+                                    </p>
+                                    <span class="fs_18 text-dark  text-center text-sm-start d-block d-sm-inline-block">
+                                        Support Team
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="border-1 border-bottom mt-4">
+                                <div
+                                    class="d-sm-flex  justify-content-between align-items-center">
+                                    <p class="team_fs text-dark mb-0  text-center text-sm-start">
+                                        Liviu Dorobantu
+                                    </p>
+                                    <span class="fs_18 text-dark  text-center text-sm-start d-block d-sm-inline-block">
+                                        Support Team
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- our team end -->
+        </section>
+        <!-- Our Studio Section End -->
+
+        <!-- Our Client -->
+        <section class="container-fluid common_section our_client_section common_padding bg-dark">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h1 class="text-white text-center">
+                            Our <br> Client
+                        </h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <i class="bi bi-chevron-double-right "></i>
+                        <span class=" mb-0 ms-2">Objective</span>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-12 mt-5 mt-md-0">
+                        <p class="gray_shade_one fs_18 common_line_height">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-01.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-02.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-03.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-04.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-05.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-06.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-07.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-6 client_img">
+                        <img src="./assets/img/client-08.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Client End -->
+
+        <!-- Our Services -->
+        <section class="container-fluid common_section common_padding overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <i class="bi bi-chevron-double-right text-dark "></i>
+                        <span class="text-dark mb-0 ms-2">Objective</span>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <h2 class="text-dark">
+                            Strategic
+                        </h2>
+                        <h2 class="text-dark">
+                            Case Approach
+                        </h2>
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-between">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div>
+                            <i class="bi bi-display fs_24 text-dark"></i>
+                            <h4 class="text-dark mt-3">
+                                Digital Interfaces
+                            </h4>
+                            <p class="fs_18 text-dark mt-3">
+                                We create interfaces, whether your business sells directly to consumers or other
+                                businesses, for any smart device type or screen size.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div>
+                            <i class="bi bi-pencil-fill fs_24 text-dark"></i>
+                            <h4 class="text-dark mt-3">
+                                Creative Production
+                            </h4>
+                            <p class="fs_18 text-dark mt-3">
+                                We create interfaces, whether your business sells directly to consumers or other
+                                businesses, for any smart device type or screen size.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="marquee_text text-dark  text-start mt-4">Make brands attractive and connect them to
+                            their audiences.</h1>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div>
+                            <i class="bi bi-lightbulb-fill text-dark fs_24"></i>
+                            <h4 class="text-dark mt-3">
+                                Brand Strategy
+                            </h4>
+                            <p class="fs_18 text-dark mt-3">
+                                We create interfaces, whether your business sells directly to consumers or other
+                                businesses, for any smart device type or screen size.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div>
+                            <i class="bi bi-tablet text-dark fs_24"></i>
+                            <h4 class="text-dark mt-3">
+                                Creative Production
+                            </h4>
+                            <p class="fs_18 text-dark mt-3">
+                                We create interfaces, whether your business sells directly to consumers or other
+                                businesses, for any smart device type or screen size.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Services end -->
+        <!-- Footer -->
+        <footer class="common_section common_padding bg-dark pb-4 overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <i class="bi bi-arrow-down-right  text-white fs_20"></i>
+                        <h4 class="mt-4">About our Agency</h4>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="marquee_text  text-start mt-4">Creative Studio Desgin - Creative Studio Desgin -</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-sm-between flex-column flex-sm-row ">
+                        <div class="scroll_down position-relative d-none d-lg-inline-block order-sm-1 order-2">
+                            <a href="#firstSection" id="backToTop" class="text-decoration-none text-white">
+                                <i class="bi bi-arrow-up-short fw-bold text-whites"></i>
+                                <span>Back Top</span>
+                            </a>
+                        </div>
+                        <p class="order-sm-2 order-3 text-center text-sm-start">
+                            2022 © . All rights reserved.
+                        </p>
+                        <div class="order-sm-3 order-1 social_media d-flex d-block flex-column  align-items-center">
+                            <div class="d-flex gap-2 follow_us">
+                                <p class="mb-0">Follow Us</p>
+                                <i class="bi bi-share-fill text-white pb-1"></i>
+                            </div>
+                            <div class="d-flex gap-3 scocial_links">
+                                <a href="#">
+                                    In
+                                </a>
+                                <a href="#">
+                                    Fb
+                                </a>
+                                <a href="#">
+                                    Be
+                                </a>
+                                <a href="#">
+                                    Tw
+                                </a>
+                                <a href="#">
+                                    Db
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

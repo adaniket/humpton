@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>humpton</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lg-autoplay.min.css"
+        integrity="sha512-LlHSkMTvyRwh1YjzXwk6bxjdt3huGhCyK1vlCC6f7Db/g+2sYXz2YNasyZHnMUgykqPksmD/44DIINhqpWBjig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="./assets/css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaquery.css">
+
+</head>
+
+<body onload="preLoader()">
+    <!-- preloader -->
+    <div class="preloader_box text-white fs_36" id="preloaderBox">
+        <h1 id="preloader"></h1>
+    </div>
+    <!-- preloader end -->
+    <!-- pointer -->
+    <div class="pointer d-lg-block d-none"></div>
+    <!-- pointer -->
+
+    <!-- menu -->
+    <div class="container-fluid header_menu bg-dark position-fixed">
+        <div class="row w-100 h-100">
+            <div class="col  d-flex flex-column justify-content-center align-items-center">
+                <ul class="list-unstyled menu_link">
+                    <li>
+                        <a class="" href="#">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="about.html">
+                           About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="contactus.html">
+                           Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <!-- header -->
+    <header class="header container-fluid">
+        <div class="container header_container " id="header">
+            <div class="row header_row py-2">
+                <div class="col d-flex justify-content-between">
+                    <a href="./index.html">
+                        <div class="logo position-relative">
+                            <img src="./assets/img/logo-white.png" alt="" height="50"
+                                class="position-absolute header_logo">
+                        </div>
+                    </a>
+                    <div class="menu">
+                        <button class="bg-transparent text-white border-0 d-flex" id="hamburger">
+                            <span class="d-none d-sm-block">Menu</span>
+                            <div class="menu_icon ms-4 mb-2">
+                                <div class="line mt-2 mb-1"></div>
+                                <div class="line mt-1"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header End -->
+
+    <div class="locomotive-scroll" data-scroll-container>
+        <!-- Hero Section -->
+        <section class="container-fluid hero_section common_padding overflow-hidden first_section" id="firstSection">
+            <div class="container">
+                <div class="row scale_box">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <i class="bi bi-arrow-down-right  text-white fs_20"></i>
+                            </div>
+                            <h4 class="mt-4">Digital <br> Creative Agency</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <h1>
+                                    <span class="d-block ">Inspire </span>
+                                    <span class="d-block animate_box">Through </span>
+                                    <span class="d-block">Design </span>
+                                </h1>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end align-items-end pb-5">
+                                <div class="scroll_down position-relative d-none d-lg-block">
+                                    <a href="#secondSecion" id="scrollDown" class="text-decoration-none text-white">
+                                        <span>Scroll Down </span>
+                                        <i class="bi bi-arrow-down-short fw-bold text-whites"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 pt_100 ms-auto fs_36 ">
+                                <p class="trigger">
+                                    Humpton develops, designs and delivers websites and creative campaigns that drive
+                                    results,
+                                    build awareness and win awards.
+                                </p>
+                                <p class="mt-5">
+                                    Our work never brags, but it sure loves to speak for itself.
+                                </p>
+                                <div>
+                                    <a href="#" class="text-decoration-none text-white read_more position-relative">
+                                        Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Projects Section -->
+        <section class="common_section common_padding project_section overflow-hidden" id="secondSecion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4 class="text-dark">Projects</h4>
+                        <p class="mt-2 light_gray fs_18 common_line_height">
+                            The driving force of all speeches, we believe that creation should be the point around which
+                            any communication strategy revolves.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <!-- <marquee behavior="" direction="right" class="text-dark fw-bold">Make brands attractive and connect them to their audiences.</marquee> -->
+                        <h1 class="marquee_text text-dark text-start mt-4">Make brands attractive and connect them to
+                            their audiences</h1>
+                    </div>
+                </div>
+                <div>
+                    <!-- <div class="row mt_100 justify-content-between position-relative">
+                        <div class="col-7 overflow-hidden">
+                            <a href="./assets/img/01hero.jpg" data-lg-size="1600-2400" data-lightbox="mygallery">
+                                <img alt="img1" src="./assets/img/01hero.jpg" class="img-fluid same_img" />
+                            </a>
+                        </div>
+                        <div class="col-4 overflow-hidden  position-relative">
+                            <div class="img_one_move_top w-100">
+                                <a href="./assets/img/02hero.jpg" data-lg-size="1600-2400" data-lightbox="mygallery"
+                                    class="item-parallax">
+                                    <img alt="img1" src="./assets/img/02hero.jpg" class="img-fluid same_img" />
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row justify-content-between mt_300 position-relative ">
+                        <div class="col-4 overflow-hidden position-relative ">
+                            <div class="img_two_move_top w-100">
+                                <a href="./assets/img/03hero.jpg" data-lg-size="1600-2400" data-lightbox="mygallery">
+                                    <img alt="img1" src="./assets/img/03hero.jpg" class="img-fluid same_img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-7 overflow-hidden">
+                            <a href="./assets/img/04hero.jpg" data-lg-size="1600-2400" data-lightbox="mygallery">
+                                <img alt="img1" src="./assets/img/04hero.jpg" class="img-fluid same_img" />
+                            </a>
+                        </div>
+                    </div> -->
+                    <div id="animated-thumbnails">
+                        <div class="gallery row mt_100  justify-content-between">
+                            <div class=" col-7">
+                                <div class="w-100 gallery_sab_box">
+                                    <img src="./assets/img/01hero.jpg" alt="" class="img-fluid bg">
+    
+                                </div>
+                            </div>
+                            <div class="col-4 overflow-hidden text-end  position-relative">
+                                <div class="img_one_move_top w-100 gallery_sab_box">
+                                    <img alt="img1" src="./assets/img/02hero.jpg" class="img-fluid same_img bg" />
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="gallery row mt_100 trigger_img_two_row justify-content-between ">
+                            <div class="col-4 position-relative overflow-hidden">
+                                <div class="img_two_move_top gallery_sab_box w-100">
+                                    <img alt="img1" src="./assets/img/03hero.jpg" class="img-fluid same_img bg" />
+                                </div>
+                            </div>
+                            <div class="col-7 overflow-hidden text-end e">
+                                <div class=" w-100 gallery_sab_box">
+                                    <img alt="img1" src="./assets/img/04hero.jpg" class="img-fluid  bg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12 mt-4">
+                            <h3 class="text-dark ">Still Not <br> Convinced?</h3>
+                            <div class="mt_60 ">
+                                <a href="#" class="text-decoration-none fs_18 text-dark read_more position-relative">
+                                    View all Works
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+             
+        </section>
+        <!-- Projects Section End -->
+
+        <!-- Recent Engagement Section -->
+        <section class="common_section common_padding eng_section container-fluid bg-dark" id="smooth-content">
+            <div class="container">
+                <div class="col">
+                    <h5 class="text-center">Recent Engagements</h5>
+                    <h1 class="text-center mt-5">
+                        We've shipped hundreds of successful projects and features for our clients.
+                    </h1>
+                    <h5 class="text-center mt-5">
+                        The driving force of all speeches, we believe that <br class="d-none d-md-block">
+                        creation should be the point around.
+                    </h5>
+                </div>
+            </div>
+        </section>
+        <!-- Recent Engagement Section end -->
+
+        <!-- News Featured Section -->
+        <section class="common_section common_padding news_section  " id="smooth-content">
+            <div class="container">
+                <div class="row animate_row">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-dark mb-0 color_to_animate" data-before="News">News</h2>
+                        <br>
+                        <h2 class="text-dark color_to_animate" data-before="Featured">Featured</h2>
+                        <p class="mt-2 light_gray fs_18 common_line_height">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form by injected humour.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySwiper flex-nowrap mt_60 w-100 overflow-hidden">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card  border-0 bg-dark text-white overflow-hidden">
+                            <img src="./assets/img/news01.jpg" class="card-img same_img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <div>
+                                    <ul class="d-flex gap-3 p-0 ">
+                                        <li class="list-unstyled pe-2 li_link">
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Insights">
+                                                <span>Insights</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Work">
+                                                <span>Work</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-white fs_24">
+                                    We are thrilled to be nominated for the Agency of the Year
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0 bg-dark text-white overflow-hidden">
+                            <img src="./assets/img/news02.jpg" class="card-img same_img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <div>
+                                    <ul class="d-flex gap-3 p-0 ">
+                                        <li class="list-unstyled pe-2 li_link">
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Insights">
+                                                <span>Insights</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Work">
+                                                <span>Work</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-white fs_24">
+                                    How we approached our own website redesign
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="card border-0 bg-dark text-white overflow-hidden">
+                            <img src="./assets/img/news03.jpg" class="card-img same_img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <div>
+                                    <ul class="d-flex gap-3 p-0 ">
+                                        <li class="list-unstyled pe-2 li_link">
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Insights">
+                                                <span>Insights</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Work">
+                                                <span>Work</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-white fs_24">
+                                    We are thrilled to be nominated for the Agency of the Year
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="card border-0 bg-dark text-white overflow-hidden">
+                            <img src="./assets/img/news05.jpg" class="card-img same_img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                <div>
+                                    <ul class="d-flex gap-3 p-0 ">
+                                        <li class="list-unstyled pe-2 li_link">
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Insights">
+                                                <span>Insights</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="pseudo-text-effect text-decoration-none text-white" href="#"
+                                                data-after="Work">
+                                                <span>Work</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-white fs_24">
+                                    How we approached our own website redesign
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-12 mt-4">
+                        <h3 class="text-dark">Read <br> All Stories?</h3>
+                        <div class="mt_60 ">
+                            <a href="#" class="text-decoration-none fs_18 text-dark read_more position-relative">
+                                Go To Blog
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- News Featured Section End -->
+
+        <!-- Footer -->
+        <footer class="common_section common_padding bg-dark pb-4 overflow-hidden" id="smooth-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <i class="bi bi-arrow-down-right  text-white fs_20"></i>
+                        <h4 class="mt-4">About our Agency</h4>
+                    </div>
+                    <div class="col-12">
+                        <h1 class="marquee_text  text-start mt-4">Creative Studio Desgin - Creative Studio Desgin -</h1>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 d-flex justify-content-sm-between flex-column flex-sm-row ">
+                        <div class="scroll_down position-relative d-none d-lg-inline-block order-sm-1 order-2">
+                            <a href="#firstSection" id="backToTop" class="text-decoration-none text-white anchore">
+                                <i class="bi bi-arrow-up-short fw-bold text-whites"></i>
+                                <span>Back Top</span>
+                            </a>
+                        </div>
+                        <p class="order-sm-2 order-3 text-center text-sm-start">
+                            2022 © . All rights reserved.
+                        </p>
+                        <div class="order-sm-3 order-1 social_media d-flex d-block flex-column  align-items-center">
+                            <div class="d-flex gap-2 follow_us">
+                                <p class="mb-0">Follow Us</p>
+                                <i class="bi bi-share-fill text-white pb-1"></i>
+                            </div>
+                            <div class="d-flex gap-3 scocial_links">
+                                <a href="#">
+                                    In
+                                </a>
+                                <a href="#">
+                                    Fb
+                                </a>
+                                <a href="#">
+                                    Be
+                                </a>
+                                <a href="#">
+                                    Tw
+                                </a>
+                                <a href="#">
+                                    Db
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+
+
+    <!-- scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS for slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+     
+                // when window width is >= 480px
+                100: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        })
+    </script>
+    <script src="./assets/vendor/lightbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

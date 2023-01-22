@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --light_gray: #444;
+    --gray_shade: #aaa;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* / Track / */
+::-webkit-scrollbar-track {
+    background: transparent;
+
+}
+
+/* / Handle / */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* colors */
+.light_gray {
+    color: var(--light_gray);
+}
+
+.gray_shade_one {
+    color: var(--gray_shade);
+}
+
+/* colors end */
+
+
+/* font size */
+.fs_20 {
+    font-size: 1.4rem;
+}
+
+.fs_36 {
+    font-size: 2.2rem;
+}
+
+.fs_18 {
+    font-size: 1.2rem;
+}
+
+.fs_24 {
+    font-size: 1.6rem;
+}
+
+/* font size end */
+
+/* ========================>> Global Style <<======================== */
+h1 {
+    font-size: 11vw;
+}
+
+h2 {
+    font-size: calc(1rem + 4.15vw);
+}
+
+h3 {
+    font-size: calc(1rem + 2vw)
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: calc(1rem + 0.42vw);
+}
+
+.team_fs {
+    font-size: calc(1rem + 3vw);
+    cursor: pointer;
+}
+
+a {
+    font-size: 1rem;
+}
+
+marquee {
+    font-size: 11vh;
+}
+
+.pointer {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: all 0.01s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: 1px solid #c3c3c3;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.header_menu {
+    position: absolute;
+    z-index: -1;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: top;
+    top: 0;
+    left: 0;
+
+}
+
+/* classes for menu js */
+.open_menu {
+    height: 100vh;
+    z-index: 99;
+
+}
+
+.lock {
+    overflow: hidden;
+}
+
+.header_menu a {
+    font-size: calc(1rem + 5.15vw);
+}
+
+.header_menu .pseudo-text-effect::after {
+    width: 100%;
+}
+
+.header_logo {
+    top: -10px;
+}
+
+.bg_header {
+    transition: all 0.4s ease-in-out;
+}
+
+.header_row {
+    border-radius: 0px;
+    transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bg_header .header_row {
+    transition: all 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* class to animate text */
+.color_to_animate {
+    position: relative;
+    color: rgba(0, 0, 0, 0.4) !important;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.color_to_animate::before {
+    transition: all 1s ease-in-out;
+    content: attr(data-before);
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0px;
+    color: #000;
+}
+
+.w_100::before {
+    width: 100%;
+}
+
+/* ========================>> Global Style End <<======================== */
+/* =======================>> Preloader <<================================= */
+.preloader_box {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    opacity: 1;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.preloader_box h1{
+    transition: all 0.1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.scale_box{
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    transform: scale(0.8);
+}
+.hide_preloder {
+    opacity: 0;
+    height: 0;
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    transform-origin: top;
+}
+
+.hide_preloder .preloader {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+
+}
+
+/* =======================>> Preloader End <<================================= */
+/* ====>> padding <<======= */
+.pt_100 {
+    padding-top: 100px;
+}
+
+/* =======>> margine <<====== */
+
+.mt_60 {
+    margin-top: 60px;
+}
+
+.mt_100 {
+    margin-top: 100px;
+}
+
+.mt_300 {
+    margin-top: 300px;
+}
+
+/* ========================>> Common Classes <<========================== */
+.common_padding {
+    padding: 0 20px;
+}
+
+.common_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.common_line_height {
+    line-height: 36px;
+}
+
+.img {
+    max-width: 1200px;
+}
+
+.same_img {
+    transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transform: scale(1.05);
+}
+
+.same_img:hover {
+    transform: scale(1);
+}
+
+/* ========================>> Common Classes End <<========================== */
+/* ======================>> Header <<========================== */
+.header {
+    position: fixed;
+    padding: 20px 0px;
+    z-index: 99;
+    transition: all 0.4s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.header .logo img:nth-child(2) {
+    opacity: 0;
+}
+
+.header .line {
+    width: 20px;
+    border-radius: 2px;
+    height: 3px;
+    position: relative;
+    background: #fff;
+    color: #fff;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+
+.header .open .line:nth-child(1) {
+    transform: rotate(135deg);
+    top: 4px;
+}
+
+.header .open .line:nth-child(2) {
+    transform: rotate(-135deg);
+    top: -2px;
+}
+
+.change_bg {
+    transition: all 0.4s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ======================>> Header End <<========================== */
+
+/* ======================>> Hero Section <<========================*/
+.hero_section {
+    background-image: url(../img/02hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero_section .bi-arrow-down-right::before {
+    font-weight: bolder !important;
+}
+
+.hero_section .scroll_down {
+    bottom: 100px;
+}
+
+.read_more::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #c1c1c1;
+    border-radius: 4px;
+    position: absolute;
+    top: 24px;
+    transition: all 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.read_more:hover::before {
+    width: 0%;
+}
+
+/* ======================>> Hero Section End <<========================*/
+
+/* =======================>> Project Section <<======================== */
+.marquee_text {
+    white-space: nowrap;
+    word-wrap: break-word;
+    animation: move 4s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        transform: translate(-100%, 0%);
+    }
+}
+
+.img_one_move_top,
+.img_two_move_top {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* =======================>> Project Section End <<======================== */
+
+/* =======================>> News Section <<=============================== */
+.news_section .same_img {
+    transform: scale(1.05);
+    transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.news_section .card:hover .same_img {
+    transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transform: scale(1);
+}
+
+.pseudo-text-effect {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.5s;
+    display: block;
+}
+
+.pseudo-text-effect::after {
+    content: attr(data-after);
+    display: inline-block;
+    transform: translateY(100%);
+    position: absolute;
+    left: 0;
+    transition: inherit;
+}
+
+.pseudo-text-effect>span {
+    display: inline-block;
+    transform: translateY(0%);
+    transition: inherit;
+}
+
+.pseudo-text-effect:hover>span {
+    transform: translateY(-100%);
+}
+
+.pseudo-text-effect:hover::after {
+    transform: translateY(0%);
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eng_section {
+    background-image:
+        linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../img/04hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =======================>> News Section End <<=============================== */
+/* =======================>> Footer <<========================================= */
+footer .social_media {
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+footer .follow_us {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+footer .social_media:hover .follow_us {
+    left: 20%;
+    top: -50%;
+}
+
+footer .social_media:hover .scocial_links {
+    width: auto;
+    height: auto;
+
+}
+
+
+footer .scocial_links {
+    position: absolute;
+    top: 0;
+    left: -40%;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+footer .scocial_links a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+footer .scocial_links a:hover {
+    opacity: 1;
+    text-shadow: 1px 1px 2px rgb(0 0 0 / 60%);
+    transform: scale(1.1);
+}
+
+/* =======================>> Footer End <<========================================= */
+
+
+/* ==============================================>> About Page <<=================================================== */
+/* About Section */
+.about_section {
+    background-image: url(../img/about\ .jpg);
+}
+
+/* Our Story Section */
+.our_studio_section .studio_img_one {
+    width: 25vw;
+}
+
+.our_studio_section .studio_img_two {
+    width: 30vw;
+}
+
+.our_studio_section .studio_img_three {
+    width: 35vw;
+}
+
+/* Our Clients Section */
+.our_client_section .client_img img {
+    opacity: 0.6;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.our_client_section .client_img:hover img {
+    opacity: 1;
+}
+
+.move_img {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ==============================================>> About Page End <<=================================================== */
+
+/* =============================================>> Contact Us Page <<=================================================== */
+.contact_section {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+        url('../img/04hero.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #000 !important;
+}
+
+/* lets talk section */
+.lets_talk_section input {
+    border: none;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.lets_talk_section label {
+    position: absolute;
+    width: 0;
+    top: 34px;
+    background-color: #000;
+    height: 2px;
+    left: 0;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    transform-origin: right;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.lets_talk_section input:focus+label {
+    width: 100%;
+    transform-origin: left;
+}
+
+.lets_talk_section .number_input {
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+    line-height: 34px;
+    color: #fff;
+    background-color: #000;
+}
+
+.lets_talk_section .email::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: all 0.4s ease-out;
+}
+
+.lets_talk_section .email_anchore:hover .email::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* footer */
+.contact_footer {
+    color: #000 !important;
+}
+
+/* =============================================>> Contact Us Page End <<=================================================== */
+
+
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid #fff;
+    width: calc(100% - 50px);
+    margin: 60px auto 0;
+}
+
+.gallery a {
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+}
+
+.gallery a img {
+    height: 100%;
+    transform: scale(1,1);
+    transition: all 300ms ease;
+}
+
+.gallery a img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.bg {
+    width: 100%;
+    background-size: 100% 100%;
+    transform: scale(1,1);
+    transition: all 300ms ease;
+}
+
+.bg:hover {
+    transform: scale(1.1,1.1);
+}
+
+
+
+/* menu */
+.menu_link li{
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.menu_link li a{
+   display: inline-block;
+    transform: translateY(0%);
+    transition: all 0.4s ease-in-out;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.menu_link li a::before{
+    content: attr(data-content); 
+   display: inline-block;
+    text-align: center;
+    transform: translateY(100%);
+    position: absolute;
+    color: #fff;
+    left: 0;
+    font-weight: 300;
+    transition: inherit;
+}
+.menu_link li:hover a{
+    transform: translateY(-100%);
+}
+.menu_link li:hover a::before{
+    transform: translateY(100%);
+}
+

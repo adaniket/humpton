@@ -1,0 +1,50 @@
+@media screen and (max-width:992px) {
+    .common_padding{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mt_100{
+        margin-top: 60px;
+    }
+    .mt_300{
+        margin-top: 150px;
+    }
+    .gallery a {
+		width: 50%;
+	}
+}
+@media screen and (max-width:768px) {
+    .gallery a {
+		width: 100%;
+	}
+}
+@media screen and (max-width:576px) {
+    .fs_36{
+        font-size: 1.6rem;
+    }
+    p{
+        text-align: justify;
+    }
+    .common_padding{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .common_section{
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    .mt_100{
+        margin-top: 40px;
+    }
+    .mt_300{
+        margin-top: 100px;
+    }
+    .mt_60{
+        margin-top: 40px;
+    }
+    footer .scocial_links {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+}
